@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - StudioKuYuk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+      margin: 0;
+      padding: 0;
+    }
+    .dashboard {
+      max-width: 600px;
+      background: white;
+      margin: 100px auto;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #6a1b9a;
+    }
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-yellow { background: #ffca28; }
+    .btn-blue { background: #42a5f5; color: white; }
+    .btn-brown { background: #8d6e63; color: white; }
+    .btn-green { background: #66bb6a; color: white; }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h2>DASHBOARD StudioKuYuk</h2>
+    <div class="btn-row">
+      <button class="btn-yellow">CEK JADWAL STUDIO</button>
+      <button class="btn-blue">BOOKING JADWAL STUDIO</button>
+      <button class="btn-brown">RIWAYAT BOOKING</button>
+      <button class="btn-green">LOGOUT</button>
+    </div>
+  </div>
+</body>
+</html>
