@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cek Jadwal Studio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .box {
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+    .form-group {
+      background: #555;
+      padding: 1rem;
+      border-radius: 20px;
+      display: inline-block;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    input[type="date"] {
+      margin-left: 1rem;
+      padding: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      background-color: #ff7043;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .result {
+      margin-top: 1.5rem;
+      background: #ffffff33;
+      padding: 1rem;
+      border-radius: 15px;
+      width: 300px;
+    }
+    .studio {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      background: #fff;
+      color: #333;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>CEK JADWAL STUDIO</h1>
+    <div class="form-group">
+      📅 Pilih Tanggal: <input type="date" id="tanggal">
+    </div>
+    <br>
+    <button onclick="cekJadwal()">Cek Jadwal</button>
+
+    <div class="result" id="hasilJadwal" style="display: none;">
+      <h3>Jadwal Studio:</h3>
+      <div id="listJadwal"></div>
+    </div>
+  </div>
+
+  <script>
+    function cekJadwal() {
+      const tanggal = document.getElementById('tanggal').value;
+      const hasil = document.getElementById('hasilJadwal');
+      const list = document.getElementById('listJadwal');
+
+      if (!tanggal) {
+        alert("Silakan pilih tanggal terlebih dahulu!");
+        return;
+      }
+
+      // Simulasi data jadwal (bisa diganti dengan fetch API ke database)
+      const jadwal = {
+        "2025-06-02": ["Studio A - 10:00", "Studio B - 13:00", "Studio C - 15:00"],
+        "2025-06-03": ["Studio A - 09:00", "Studio C - 16:00"],
+        "2025-06-04": []
+      };
+
+      const data = jadwal[tanggal] || [];
+
+      list.innerHTML = "";
+
+      if (data.length === 0) {
+        list.innerHTML = "<div class='studio'>Tidak ada jadwal tersedia.</div>";
+      } else {
+        data.forEach(item => {
+          const div = document.createElement("div");
+          div.className = "studio";
+          div.textContent = item;
+          list.appendChild(div);
+        });
+      }
+
+      hasil.style.display = "block";
+    }
+  </script>
+</body>
+</html>
