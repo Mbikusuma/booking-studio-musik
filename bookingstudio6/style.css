@@ -1,0 +1,169 @@
+/* login n register */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  margin: 0;
+  padding: 0;
+}
+
+.form-box {
+  max-width: 400px;
+  background: white;
+  margin: 100px auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 90%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: #ffca28;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #f4b400;
+}
+
+.card {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* dashboard */
+.dashboard {
+  max-width: 600px;
+  background: white;
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-yellow {
+  background: #ffca28;
+  color: black;
+}
+
+.btn-blue {
+  background: #42a5f5;
+  color: white;
+}
+
+.btn-brown {
+  background: #8d6e63;
+  color: white;
+}
+
+.btn-green {
+  background: #66bb6a;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* logout */
+.logout-confirm {
+  max-width: 500px;
+  background: white;
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 1rem;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-green {
+  background: #66bb6a;
+  color: white;
+}
+
+.btn-yellow {
+  background: #ffca28;
+  color: black;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
